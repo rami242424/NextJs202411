@@ -7,7 +7,6 @@ export default function RootLayout({
   return (
       <div>
         {children}
-        &copy; Next Js is great!
       </div>
 
   )
