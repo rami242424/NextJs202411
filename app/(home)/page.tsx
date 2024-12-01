@@ -9,7 +9,7 @@ export const metadata = {
 export default function Page(){
     const [isLoading, setIsLoading] = useState(true);
     const [movies, setMovies] = useState([]);
-    const getMovies = async() =>{
+    const getMovies = async() => {
         const response = await fetch("http://nomad-movies.nomadcoders.workers.dev/movies");
         const json = await response.json();
         setMovies(json);
