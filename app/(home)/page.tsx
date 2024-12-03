@@ -4,19 +4,19 @@ export const metadata = {
 
 const URL = "http://nomad-movies.nomadcoders.workers.dev/movies";
 
-async function getMovies(){
-    // return fetch(URL).then(response => response.json());
-    const response = await fetch(URL);
-    const json = await response.json();
-    return json;
+async function getMovies() {
+    return fetch(URL).then(response => response.json());
+    // const response = await fetch(URL);
+    // const json = await response.json();
+    // return json;
 }
 
-export default function Page(){
-    
+export default function Page() {
+
 
     return (
         <div>
-           {JSON.stringify(movies)}
+            {JSON.stringify(movies)}
         </div>
     )
 }
