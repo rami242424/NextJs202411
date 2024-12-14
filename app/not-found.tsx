@@ -1,13 +1,13 @@
-// import { Metadata } from "next"
+import { Metadata } from "next"
 
-// export const metadata: Metadata = {
-//     title : "Not found",
-// }
+export const metadata: Metadata = {
+    title: "Not found",
+}
 
-// export default function NotFound(){
-//     return (
-//     <div>
-//         <h1>Not found!</h1>
-//     </div> 
-//     )
-// }
+export default function NotFound() {
+    return (
+        <div>
+            <h1>Not found!</h1>
+        </div>
+    )
+}
